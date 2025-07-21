@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navi">
+      <nav>
+        <ul>
+          <li>Blog</li>
+          <li>Home</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <h1 class="heading">Comparing The Big Three</h1>
+      <p>Windows - MacOS - Linux</p>
+    </header>
+    <div class="container">
+      <div class="card">
+        <div class="title" id="windows-title">
+          <h2 class="title-name">Windows</h2>
+          <div class="image">
+            <img src="media/windows.png" alt="" width="100px" height="100px" />
+          </div>
+        </div>
+        <div class="discription">
+          <h3 class="headline">Directory Structure</h3>
+          <p>
+            Windows uses drive letters to represent storage devices and/ or
+            partitions (C:\ or D:\). The File System Type(s) that are used are
+            NTFS, exFAT and FAT32. User files are usually stored in C:\users\
+            with sub folders that are for different file types. System files are
+            usually stored in C:\Windows\ and/or C:\Program Files\. For file
+            paths, Windows uses backslashes (\) to separate folders and they are
+            not case sensitive.
+          </p>
+          <div class="extra-content">
+          <h3 class="headline">Naming Conventions</h3>
+          <p>
+            Windows is not case-sensitive, meaning File.txt and file.txt are treated as the same file. 
+            However, Windows is case-preserving, so it remembers the original capitalization. You can’t 
+            use characters like \ / : * ? " < > | in file or folder names, and you can't name files CON, 
+            PRN, AUX, NUL, or COM1 through COM9, as these are reserved system names
+          </p>
+            <h3 class="headline">File Systems</h3>
+            <p>
+            Windows primarily uses NTFS (New Technology File System) for internal drives. It supports file
+            permissions, encryption, compression, and large file sizes. FAT32 and exFAT are also supported, 
+            mostly for USB drives and SD cards. FAT (File Allocation Table) is an older system and is still 
+            used in very small storage devices or embedded systems like BIOS or digital cameras.
+            </p>
+            </div>
+        </div>
+        <div class="showMore">
+          <button class="showMore-button">Show More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="title" id="linux-title">
+          <h2 class="title-name">Linux</h2>
+          <div class="image">
+            <img src="media/linux.png" alt="" width="100px" height="100px" />
+          </div>
+        </div>
+        <div class="discription">
+          <h3 class="headline">Directory Structure</h3>
+          <p>
+            Linux uses one root for all files. User data is placed in /home/
+            directory while system configurations are stored in /etc and
+            essential binaries in /bin/usr and/or in sbin/. Drives and
+            partitions are mounted manually or automatically under /mnt or
+            /media. Linux uses forward slashes(/) and is always case-sensitive.
+          </p>
+          <div class="extra-content">
+          <h3 class="headline">Naming Conventions</h3>
+          <p>
+            Linux is case-sensitive, meaning data.txt, Data.txt, and DATA.TXT are all different files. 
+            You can use almost any character in file names except the forward slash / and the null 
+            character \0. Spaces are allowed but should be escaped or quoted when used in the terminal 
+            (e.g., "My File.txt" or My\ File.txt).
+          </p>
+          <h3 class="headline">Naming Conventions</h3>
+          <p>
+            Linux commonly uses ext4 (Fourth Extended File System) for most distributions. It supports 
+            journaling, large volumes, and is very stable. Linux can also work with other file systems like 
+            ext3, Btrfs, XFS, and can read/write to FAT32 and exFAT when the right tools or drivers are 
+            installed.
+          </p>
+          </div>
+        </div>
+        <div class="showMore">
+          <button class="showMore-button">Show More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="title" id="mac-title">
+          <h2 class="title-name" >MacOs</h2>
+          <div class="image">
+            <img src="media/Mac (2).jpg" alt="" width="100px" height="100px" />
+          </div>
+        </div>
+        <div class="discription">
+          <h3 class="headline">Directory Structure</h3>
+          <p>
+            Mac follows a Unix style structure where everything begins from one
+            root also. User home folders are stored under /Users. Drives and
+            USBs are found under .Volumes and system files are organized in
+            directories like /System, /Library and /Applications. Applications
+            are stored as .app bundles. Mac also uses forward slashes and case
+            sensitive by default. Symbols like (~) are used to represent the
+            user’s home.
+          </p>
+          <div class="extra-content">
+          <h3 class="headline">File Systems</h3>
+          <p>
+            By default, macOS is case-insensitive but case-preserving, unless the drive is formatted with 
+            a case-sensitive file system. So Report.docx and report.docx are usually the same file. Like 
+            Linux, macOS doesn’t allow characters such as : in file names (though / is also restricted 
+            when interacting from the terminal). Filenames can include spaces and Unicode characters. 
+          </p>
+          <h3 class="headline">File Systems</h3>
+          <p>
+            macOS uses APFS (Apple File System) for modern macOS versions (especially SSDs). It supports 
+            snapshots, encryption, and fast directory cloning. Older systems may still use HFS+ (Mac OS 
+            Extended). macOS can read and write FAT32 and exFAT drives, making it compatible with 
+            Windows-formatted USBs.
+          </p>
+          </div>
+        </div>
+        <div class="showMore">
+          <button class="showMore-button">Show More</button>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
